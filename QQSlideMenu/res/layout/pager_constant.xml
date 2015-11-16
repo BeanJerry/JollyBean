@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+	<LinearLayout 
+	     android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal"
+	    >
+	<ListView 
+	    android:id="@+id/listView"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+	    />
+	<com.jerrybean.qqslidemenu.view.QuickIndexBar 
+	    android:id="@+id/quickindex"
+	    android:layout_width="20dp"
+	    android:layout_height="match_parent"
+	    />
+	</LinearLayout>
+	<TextView
+	    android:id="@+id/textview"
+	    android:layout_width="110dp"
+	    android:layout_height="110dp"
+	    android:gravity="center"
+	    android:textSize="50dp"
+	    android:textColor="#fff"
+	    android:layout_centerInParent="true"
+	    android:background="@drawable/quickbar_shape"
+	    />
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jerrybean.qqslidemenu.view.MyLinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#58C2F9" >
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/head" />
+    </RelativeLayout>
+
+    <com.jerrybean.qqslidemenu.view.NoScrollViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#58C2F9"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_chat"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_rb_chat"
+            android:gravity="center"
+            android:text="消息"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/rb_constant"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_rb_constant"
+            android:gravity="center"
+            android:text="联系人"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/rb_social"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_rb_social"
+            android:gravity="center"
+            android:text="动态"
+            android:textSize="12dp" />
+    </RadioGroup>
+
+</com.jerrybean.qqslidemenu.view.MyLinearLayout>
